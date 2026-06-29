@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Koshti - Portfolio</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #a63c86;
+            --secondary-color: #494a93;
+            --background-color: #f4f6f9;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #1e293b;
+            --border-radius: 12px;
+            --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            --spacing: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: var(--spacing);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        header {
+            background: linear-gradient(
+                135deg,
+                var(--primary-color),
+                var(--secondary-color)
+            );
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing);
+            box-shadow: var(--shadow);
+        }
+
+        section {
+            background-color: var(--card-color);
+            padding: var(--spacing);
+            margin-bottom: var(--spacing);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact p {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--heading-color);
+            color: white;
+            border-radius: var(--border-radius);
+        }
+
+        footer b {
+            color: #facc15;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 25px;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Sakshi Koshti</h1>
+        <p>BCA Third Year Student | Aspiring Web Developer</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Sakshi Koshti. I am a BCA Third Year student.
+            I am interested in programming, web development, and learning new technologies.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>BCA Third Year Student</li>
+            <li>Learning HTML, CSS, and Programming</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Learning</h2>
+        <ul>
+            <li>HTML Basics</li>
+            <li>CSS Fundamentals</li>
+            <li>C Programming</li>
+            <li>Computer Fundamentals</li>
+            <li>Problem Solving Techniques</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <ul>
+            <li>Successfully completed HTML projects.</li>
+            <li>Participated in college activities.</li>
+            <li>Improving programming and web development skills.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C Programming</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong>sakashikoshti@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8010205842</p>
+    </section>
+
+    <footer>
+        <b>Thank You for Visiting My Portfolio!</b>
+    </footer>
+
+</div>
+
+</body>
+</html>

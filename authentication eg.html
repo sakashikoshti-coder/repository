@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Authentication Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #b08cb0, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #d6cea8;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+    h2 { margin-bottom: 20px; color: #333; }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover { background: #45a049; }
+    .message { margin-top: 15px; font-weight: bold; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="authenticate()">Login</button>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script>
+    function authenticate() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const messageBox = document.getElementById("message");
+
+      const validUser = "admin";
+      const validPass = "1234";
+
+      if (user === validUser && pass === validPass) {
+        // Redirect to landing page
+        window.location.href = "landing.html";
+      } else {
+        messageBox.textContent = "Invalid Username or Password.";
+        messageBox.className = "message error";
+      }
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Image Example</title>
+</head>
+<body>
+  <!-- Original image -->
+  <img id="myImage" src="https://i.pinimg.com/236x/af/2d/f1/af2df1df054b299e8da44a783f4cf729.jpg" alt="Beautiful Flower" width="200">
+
+  <button onclick="changeImage()">Change Image</button>
+
+  <script>
+    function changeImage() {
+      // Select the image by ID
+      let img = document.getElementById("myImage");
+      
+      // Change the source to another image
+      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzi2M1HskOGJXW_cOAxXtk1ptHs1yGmpDXeslqZWMxMA&s=10"; 
+      
+      // Change the alt text
+      img.alt = "flower";
+    }
+  </script>
+</body>
+</html>

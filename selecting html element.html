@@ -1,0 +1,78 @@
+Selecting HTML Elements:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Selectors Example</title>
+</head>
+<body>
+
+    <!-- ID Selector -->
+    <h1 id="heading">Original Heading</h1>
+
+    <!-- Class Selector -->
+    <p class="text">First Paragraph</p>
+    <p class="text">Second Paragraph</p>
+
+    <!-- Tag Selector -->
+    <h2>Heading One</h2>
+    <h2>Heading Two</h2>
+
+    <!-- querySelector -->
+    <p class="message">Original Message</p>
+    <p class="message">Another Message</p>
+
+    <!-- querySelectorAll -->
+    <ul>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Mango</li>
+        <li class="fruit">Orange</li>
+    </ul>
+
+    <button onclick="changeContent()">
+        Click Me
+    </button>
+
+    <script>
+
+        function changeContent() {
+
+            // 1. getElementById()
+            document.getElementById("heading").innerHTML =
+                "Changed using getElementById()";
+
+
+            // 2. getElementsByClassName()
+            document.getElementsByClassName("text")[0].innerHTML =
+                "First paragraph changed";
+
+            document.getElementsByClassName("text")[1].innerHTML =
+                "Second paragraph changed";
+
+
+            // 3. getElementsByTagName()
+            document.getElementsByTagName("h2")[0].innerHTML =
+                "Heading One Updated";
+
+            document.getElementsByTagName("h2")[1].innerHTML =
+                "Heading Two Updated";
+
+
+            // 4. querySelector()
+            document.querySelector(".message").innerHTML =
+                "Message changed using querySelector()";
+
+
+            // 5. querySelectorAll()
+            let fruits =
+                document.querySelectorAll(".fruit");
+
+            fruits[0].innerHTML = "Banana";
+            fruits[1].innerHTML = "Grapes";
+            fruits[2].innerHTML = "Pineapple";
+        }
+
+    </script>
+
+</body>
+</html>

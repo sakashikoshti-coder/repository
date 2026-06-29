@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    padding:30px;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:250px;
+    min-height: 420px;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+.card button{
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+/* Card 1 */
+.card1{
+    background:lightpink;
+    border:2px solid #00080e;
+}
+
+.card1 button{
+    background:rgb(26, 1, 1);
+    color:rgb(240, 234, 234);
+    font-weight:bold;
+    border:2px 
+}
+
+/* Card 2 */
+.card2{
+    background:linear-gradient(135deg,#ffe6e6,#ffd6a5);
+    border:2px solid #00080e;
+}
+
+.card2 button{
+    background:#0e0600;
+    color:white;
+}
+
+/* Card 3 */
+.card3{
+    background:#e8fff1;
+    border:2px solid rgb(1, 10, 1);
+}
+
+.card3 button{
+    background:rgb(3, 5, 3);
+    color:white;
+}
+
+/* Card 4 */
+.card4{
+    background:lightsteelblue;
+    color:rgb(1, 0, 0);
+    border:2px solid #00080e;
+}
+
+.card4 button{
+    background:rgb(18, 17, 17);
+    color:rgb(245, 243, 243);
+    font-weight:bold;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}

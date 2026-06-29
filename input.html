@@ -1,0 +1,45 @@
+User Input:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Example</title>
+</head>
+<body>
+
+    <h1>JavaScript User Input</h1>
+
+    <!-- Method 2: HTML Input Field -->
+    <h3>Input Field Example</h3>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="showName()">
+        Submit
+    </button>
+
+    <script>
+
+        // Method 1: Using prompt()
+
+        let userName = prompt("Enter your name");
+
+        console.log("Name from Prompt:", userName);
+
+
+
+        // Method 2: Using HTML Input Field
+
+        function showName() {
+
+            let name = document.getElementById("username").value;
+
+            console.log("Name from Input Field:", name);
+
+            alert("Hello " + name);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Global CSS Variables */
+:root {
+  --text-color: rgb(14, 14, 16);
+  --font-size: 30px;
+}
+
+.box {
+  /* Local CSS Variable */
+  --box-color: rgb(223, 152, 202);
+
+  color: var(--text-color);   /* Global Variable */
+  font-size: var(--font-size); /* Global Variable */
+  background-color: var(--box-color); /* Local Variable */
+  padding: 20px;
+}
+.boxes {
+  color: var(--text-color); 
+  font-size:30px;  
+  /* --box-color: rgb(73, 45, 233); */
+  background-color: var(--box-color,rgb(136, 221, 243)); /* Local Variable */
+  padding:20px;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+  Hello CSS Variables 1
+</div>
+<div class="boxes">
+    Hello CSS Variables 2
+</div>
+<div class="box">
+  Hello CSS Variables 3
+</body>
+</html>
